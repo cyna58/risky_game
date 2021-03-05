@@ -1,0 +1,15 @@
+#map {
+ width: 100%;
+ height: auto; 
+ position:absolute;
+ opacity:0.3;  
+}
+
+.tile {
+    width:5vw;
+    height:5vw;
+    padding-botton:100%;
+    position:relative;
+    background-color:yellow;
+    float:left;
+}

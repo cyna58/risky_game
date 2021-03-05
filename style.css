@@ -1,0 +1,195 @@
+body {
+    border:none;
+    margin:0px;
+    background-color:azure;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#sidebar {
+    width: 18%;
+    height: 100vh;
+    float:left;
+    background-color:black;
+    position:fixed;
+}
+#sidebar button {
+    width:50%;
+    position:absolute;
+    top: 10%;
+    left:25%;
+    height:4%;    
+} 
+
+#sidebar button:hover {
+  background-color:lightblue;
+}
+
+h1 {
+  color:lightblue;
+  font-family:monospace;
+  text-align:center;
+}
+
+h1:hover {
+   color:white;
+}
+
+#teamsel {
+  width: 30%;
+  position:absolute;
+  top:16%;
+  left:35%;
+  height:5%;
+  font-size:100%;
+}
+
+.turnpanel {
+    width:50%;
+    heigt:4%;
+    background-color:grey;
+    position:absolute;
+    top:16%;
+    left:25%;
+    text-align:center;
+    display:none;
+}
+
+/** there is a map **/
+
+#map {
+    width:82vw;
+    height:82vw;
+    float:left;
+    background-color:azure;
+    padding:none;
+    border:none;
+    position:absolute;
+    left:18vw;
+    opacity: 0;
+}
+
+
+iframe {
+    margin:0px;
+    border:none;
+    padding:none;
+    width: 100%;
+    height: 100%;
+}
+
+#mapa {
+ width: 100%;
+ height: auto; 
+ position:absolute;
+ opacity:0;  
+}
+
+#info {
+  position:fixed;
+  width:22vw;
+  height:18vw;
+  background-color:azure;
+  opacity:0.5
+}
+
+.tile {
+    width:2vw;
+    height:2vw;
+    padding-botton:100%;
+    position:relative;
+    background-color:white;
+    float:left;
+    opacity:0.8;
+    text-align:center;
+    border-color:transparent;
+}
+
+.tile:hover {
+    opacity:1;
+    border-color:white;
+}
+
+.customhover:hover {
+  opacity:1;
+}
+
+.sea {background-color:azure;color:transparent;opacity:1} /* Sea */
+.ccpl {background-color:red; color:white} /* Poland */
+.ccde {background-color:black;color:yellow;} /* Germany */
+.cces {background-color:orange;color:darkred;} /* Spain */
+.ccpt {background-color:darkgreen;color:yellow;} /* Portugal */
+.ccfr {background-color:blue;color:white;} /* France */
+.ccgb {background-color:violet;color:darkblue;} /* Great Britain */
+.ccir {background-color:green;color:lightcoral} /* Ireland */
+.ccit {background-color:lightgreen;color:darkblue;} /* Italy */
+.cccz {background-color:pink; color: blue;} /* Czech Republic */
+.ccsu {background-color:coral;color:darkred;} /* Switzerland */
+.ccau {background-color:darkred;color:white;} /* Austria */
+.ccsk {background-color:blueviolet;color:lightblue ;} /* Slovakia */
+.cclt {background-color:yellow;color:darkgreen;} /* Lithuania */
+.cclv {background-color:brown;color:white;} /* Latvia */
+.ccet {background-color:slateblue;color:lightblue;} /* Estonia */
+.ccse {background-color:lightblue;color:yellow;} /* Sweden */
+.ccno {background-color:chocolate;color:darkblue;} /* Norway */
+.ccfi {background-color:lightgray;color:darkblue} /* Finland */
+.ccdk {background-color:lightgray;color:darkred} /* Denmark */
+.ccnl {background-color:darkorange;color:darkblue;} /* Netherlands */
+.ccbe {background-color:darkgray;color:darkred;} /* Belgium */
+.cchu {background-color:mediumseagreen;color:coral;} /* Hungary */
+.ccbl {background-color:salmon;color:white;} /* Belarus */
+.ccua {background-color:aqua;color:yellow;} /* Ukraine */
+.ccru {background-color:pink;color:darkred} /* Russia */
+.cctu {background-color:lightcoral;color:white} /* Turkey */
+.ccgr {background-color:lightblue;color:blue;} /* Greece */
+.ccml {background-color:beige;color:darkred} /* Moldova */
+.ccbg {background-color:greenyellow;color:darkgreen;} /* Bulgaria */
+.ccal {background-color:lightpink;color:darkred} /* Albania */
+.ccro {background-color:olive;color:lightblue} /* Romania */
+.ccsv {background-color:cadetblue;color:lightgreen} /* Slovenia */
+.cccr {background-color:navy;color:red} /* Croatia */
+.ccbs {background-color:darkturquoise;color:darkgreen} /* Bosnia */
+.ccsr {background-color:aquamarine;color:darkblue} /* Serbia */
+.ccko {background-color:cornflowerblue;color:white} /* Kosovo */
+
+@keyframes neighanim {
+  50% {background-color: gold;
+        color:black;
+        border-color:black}
+}
+
+.neigh {
+  animation: neighanim 2s infinite;
+}
+
+@keyframes slidesidebar {
+  0% {width: 100vw}
+  100% {width: 18vw}
+}
+
+.sidebaranim {
+  animation-name: slidesidebar;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showmap {
+  from {opacity: 0}
+  to {opacity:1}
+}
+
+.showmapx {
+  animation-name:showmap;
+  animation-duration:3s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
